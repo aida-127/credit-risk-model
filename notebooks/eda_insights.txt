@@ -1,0 +1,45 @@
+EDA KEY INSIGHTS
+============================================================
+
+1. 📊 DATASET SIZE: 95,662 transactions × 20 features
+2. 👥 CUSTOMER BASE: 3,742 unique customers
+3. 🚨 FRAUD RATE: 0.2018% (193 fraudulent transactions)
+4. 💰 MONETARY: Total $642,642,625.50, Avg transaction $6717.85
+5. ⏰ TIME PATTERN: Peak transaction hour at 16:00
+6. 🛒 TOP CATEGORY: 'financial_services' (47.5% of transactions)
+7. 📱 MAIN CHANNEL: 'ChannelId_3' (59.5% of transactions)
+8. 🔄 ENGAGEMENT: Avg 25.6 transactions per customer
+9. ✅ MISSING DATA: No missing values found
+
+============================================================
+RECOMMENDATIONS FOR TASK 3: FEATURE ENGINEERING
+============================================================
+
+CRITICAL FEATURES TO CREATE:
+1. RFM (Recency, Frequency, Monetary) Features:
+   • Recency: Days since last transaction
+   • Frequency: Transaction count per customer
+   • Monetary: Total/avg amount per customer
+   • Std Deviation: Amount variability per customer
+
+2. Time-Based Features:
+   • Transaction hour, day, month, year
+   • Day of week, weekend flag
+   • Time since first transaction
+
+3. Behavioral Features:
+   • Favorite product category
+   • Preferred channel (web/android/ios)
+   • Country/region patterns
+   • Transaction frequency patterns
+
+4. Statistical Features:
+   • Mean, median, std of transaction amounts
+   • Min/max transaction values
+   • Transaction amount ratios
+
+DATA PROCESSING DECISIONS NEEDED:
+• Outlier handling for transaction amounts
+• Categorical encoding (one-hot vs label)
+• Missing value imputation strategy
+• Feature scaling approach
