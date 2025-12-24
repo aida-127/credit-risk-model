@@ -1,0 +1,11 @@
+services:
+  credit-risk-api:
+    build: .
+    container_name: credit-risk-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models  # ← THIS LINE IS CRITICAL
+      - ./data:/app/data
+    environment:
+      - PYTHONPATH=/app
